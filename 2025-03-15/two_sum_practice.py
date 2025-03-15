@@ -1,4 +1,19 @@
-def solution(example):
-    return 0;
+def solution(example:list, target):
+    example.sort()
+    left:int = 0
+    right:int = len(example) - 1
 
-solution([4,1,9,7,5,3,16])
+    while(example[left] + example[right]) != target:
+
+        if(example[left] + example[right] < target):
+            left += 1
+
+        else:
+            right -= 1
+
+        if(left == right or left > right):
+            return False
+
+    return True
+
+print(solution([2,1,5,7], 4))
