@@ -1,4 +1,4 @@
-def solution(example:list, target):
+def solution(example:list, target:int) -> bool:
     example.sort()
     left:int = 0
     right:int = len(example) - 1
