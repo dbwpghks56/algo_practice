@@ -3,7 +3,6 @@ def count_possible_seats(N, M, K, seats):
 
     for row in seats:
         available = 0  # 현재 윈도우 내 빈 좌석 개수
-        left = 0  # 윈도우의 왼쪽 끝
 
         for right in range(M):  # 오른쪽 포인터 이동
             if row[right] == '0':
