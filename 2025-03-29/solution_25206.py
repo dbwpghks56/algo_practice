@@ -17,4 +17,7 @@ for _ in range(20):
         sumhak += aa
         sum += aa * total[b]
 
+if 'P' not in total:
+    print('df')
+
 print(sum / (sumhak))
